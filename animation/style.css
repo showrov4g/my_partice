@@ -1,25 +1,23 @@
-
-div{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 2s;
+.container{
+    display: flex;
+    background: yellowgreen;
 }
-/* @keyframes example{
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-} */
+.box{
+    background-color: green;
+    width: 250px;
+    height: 250px; 
+    position: relative;
+    animation-name: showrov;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
-@keyframes example{
-    0% {background-color: red; left:0px; top: 0px;}
-    25% {background-color: yellow; left: 800px; top: 0px;}
-    50% {background-color: blue; left: 800px; top: 400px;}
-    75% {background-color: green; left: 0px; top: 400px;}
-    100% {background-color: red; left: 0px; top: 0px;}
+@keyframes showrov{
+    from{
+        width: 200px;
+
+    }
+    to{
+        width: 400px;
+    }
 }
