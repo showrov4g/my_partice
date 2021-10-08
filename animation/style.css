@@ -8,16 +8,43 @@
     height: 250px; 
     position: relative;
     animation-name: showrov;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    /* animation-fill-mode:forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-direction: reverse;  */
 }
 
 @keyframes showrov{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+    }
+    50%{
+        top: 250px;
+        left: 250px;
+    }
+    75%{
+        top: 0;
+        right: 250px;
+    }
+    100%{
+        top: 250px;
+        left: 0;
+    }
+}
+
+/* @keyframes showrov{
     from{
         width: 200px;
 
     }
     to{
-        width: 400px;
+        width: 1000px;
     }
-}
+} */
